@@ -1,0 +1,28 @@
+.box {
+  margin: 1rem;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+}
+
+.section {
+  display: flex;
+  width: 100%;
+}
+
+.section.is-black {
+  background-color: black;
+}
+
+p {
+  font-family: "Playfair Display", serif;
+  font-size: 13pt;
+  margin: 0% 10%;
+  color: white;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 32pt;
+  color: white;
+}
