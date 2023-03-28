@@ -9,21 +9,19 @@ import Fight3 from "../../assets/ufc_fight_3.png";
 export default function Main() {
   return (
     <div className="main">
-      {/* <!-- Landing Page Image/Video--> */}
-      {/* landing page div class not used */}
-      <div class="landingpage">
+      <div className="landingpage">
         <div>
           <img src={Hero} width="100%" />
         </div>
         {/* <!-- Local Fights (images)--> */}
-        <div class="section">
-          <img class="mediaimage" src={Fight1} />
-          <img class="mediaimage" src={Fight2} />
-          <img class="mediaimage" src={Fight3} />
+        <div className="section">
+          <img className="mediaimage" src={Fight1} />
+          <img className="mediaimage" src={Fight2} />
+          <img className="mediaimage" src={Fight3} />
         </div>
         {/* <!--Advertising Banner--> */}
-        <div class="section">
-          <div class="banner">
+        <div className="section">
+          <div className="banner">
             <h2>Advertisement</h2>
           </div>
         </div>
