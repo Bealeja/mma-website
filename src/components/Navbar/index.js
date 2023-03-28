@@ -6,38 +6,33 @@ export default function Navbar() {
   return (
     <div className="navbar">
       {/* <!--NAV BAR--> */}
-      <div class="container">
-        <div class="navbar">
-          <div class="navbar-brand">
+      <div className="container">
+        <div className="navbar">
+          <div className="navbar-brand">
             {/* <!--Logo--> */}
-            <a class="navbar-item">
+            <a className="navbar-item">
               <img src={Logo} width="50" height="50" />
             </a>
             {/* <!--Nav Links--> */}
-            <div class="navbar-start">
-              <a class="navbar-item" href="#home">
+            <div className="navbar-start">
+              <a className="navbar-item" href="#home">
                 {" "}
                 Home{" "}
               </a>
-              <a class="navbar-item" href="#aboutus">
+              <a className="navbar-item" href="#aboutus">
                 {" "}
                 About Us{" "}
               </a>
-              <a class="navbar-item" href="#marketing">
+              <a className="navbar-item" href="#marketing">
                 {" "}
                 Marketing{" "}
               </a>
-              <a class="navbar-item tac" onclick="tacFunction()">
-                {" "}
-                T&C{" "}
-              </a>
-              <a class="navbar-item tac" onclick="formFunction()">
-                Join Us!
-              </a>
+              <a className="navbar-item tac"> T&C </a>
+              <a className="navbar-item tac">Join Us!</a>
             </div>
-            <div class="navbar-end">
-              <a class="button">Login</a>
-              <a class="button">Sign Up</a>
+            <div className="navbar-end">
+              <a className="button">Login</a>
+              <a className="button">Sign Up</a>
             </div>
           </div>
         </div>

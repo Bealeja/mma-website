@@ -5,8 +5,8 @@ export default function About() {
   return (
     <div className="about">
       {/* <!-- About Us --> */}
-      <div class="section is-black">
-        <div class="box">
+      <div className="section is-black">
+        <div className="box">
           <h1>About Us</h1>
           <div>
             <p>
@@ -58,12 +58,11 @@ export default function About() {
             </p>
           </div>
         </div>
-        <div class="box">
+        <div className="box">
           <iframe
             width="700"
             height="800"
             src="https://www.youtube.com/embed/57q_S_Y7JgA?controls=0?autoplay=1"
-            frameborder="0"
           ></iframe>
           {/* <!-- <img src="./assets/Bjj_cropped.png" class="aboutusmedia" /> --> */}
         </div>
