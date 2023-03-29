@@ -7,7 +7,7 @@ export default function About() {
       {/* <!-- About Us --> */}
       <div className="section is-black">
         <div className="box">
-          <h1>About Us</h1>
+          <h1 className="blackbackground">About Us</h1>
           <div>
             <p>
               The BJJ club's commitment to supporting local tournaments is a
@@ -63,6 +63,7 @@ export default function About() {
             width="700"
             height="800"
             src="https://www.youtube.com/embed/57q_S_Y7JgA?controls=0?autoplay=1"
+            frameBorder="0"
           ></iframe>
           {/* <!-- <img src="./assets/Bjj_cropped.png" class="aboutusmedia" /> --> */}
         </div>

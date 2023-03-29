@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.scss";
 import { useState, useEffect } from "react";
 import Ads from "./Ads";
 
@@ -27,7 +28,25 @@ export default function Social() {
 
   return (
     <div className="social">
-      <h2>Social</h2>
+      <h2>Exposure</h2>
+      <div class="section">
+        <div class="statistic">
+          <h2>Facebook</h2>
+          <h3>numbers</h3>
+        </div>
+        <div class="statistic">
+          <h2>Instagram</h2>
+          <h3>numbers</h3>
+        </div>
+        <div class="statistic">
+          <h2>Snapchat</h2>
+          <h3>numbers</h3>
+        </div>
+        <div class="statistic">
+          <h2>Tiktok</h2>
+          <h3>numbers</h3>
+        </div>
+      </div>
       <p>This is the JSON data: {fight}</p>
       <Ads />
     </div>
