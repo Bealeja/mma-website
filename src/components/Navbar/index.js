@@ -1,10 +1,19 @@
 import React from "react";
 import Logo from "../../assets/Logo.png";
 import "./index.scss";
+import Signup from "../Signup";
+import { useState } from "react";
 
 export default function Navbar() {
+  const [showForm, setShowForm] = useState(false);
+
+  const handleClick = () => {
+    setShowForm(true);
+  };
+
   return (
     <div className="navbar">
+      {showForm && <Signup />}
       {/* <!--NAV BAR--> */}
       <div className="container">
         <div className="navbar">
@@ -32,7 +41,9 @@ export default function Navbar() {
             </div>
             <div className="navbar-end">
               <a className="button">Login</a>
-              <a className="button">Sign Up</a>
+              <a className="button" onClick={handleClick}>
+                Sign Up
+              </a>
             </div>
           </div>
         </div>
