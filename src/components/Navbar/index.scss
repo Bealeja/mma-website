@@ -9,6 +9,7 @@
   display: inline-block;
   font-size: 16px;
   border-radius: 10px;
+  font-family: "Playfair Display", serif;
 }
 
 .container {
@@ -48,6 +49,8 @@
   padding: 0px 10px;
   color: white;
   cursor: pointer;
+  font-family: "Playfair Display", serif;
+  font-style: none;
 }
 
 .navbar-start {
@@ -63,4 +66,41 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: red;
+  animation: 1s anim-lineUp infinite;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-5%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }

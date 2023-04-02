@@ -25,6 +25,10 @@ export default function SignUpForm({ onClose }) {
     onClose();
   };
 
+  const handleClose = () => {
+    onClose(false);
+  };
+
   return (
     <div className="popup">
       <div className="popup-inner">
@@ -51,7 +55,7 @@ export default function SignUpForm({ onClose }) {
           <br />
           <button type="submit">Sign Up</button>
         </form>
-        <button onClick={onClose}>Close</button>
+        <button onClick={handleClose}>Close</button>
       </div>
     </div>
   );

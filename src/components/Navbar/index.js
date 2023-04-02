@@ -11,9 +11,13 @@ export default function Navbar() {
     setShowForm(true);
   };
 
+  const handleClose = () => {
+    setShowForm(false);
+  };
+
   return (
     <div className="navbar">
-      {showForm && <Signup />}
+      {showForm && <Signup onClose={handleClose} />}
       {/* <!--NAV BAR--> */}
       <div className="container">
         <div className="navbar">

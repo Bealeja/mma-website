@@ -22,7 +22,14 @@ export default function Main() {
         {/* <!--Advertising Banner--> */}
         <div className="section">
           <div className="banner">
-            <h2>Advertisement</h2>
+            <span style={{ "--i": 1 }}>2</span>
+            <span style={{ "--i": 2 }}>5</span>
+            <span style={{ "--i": 3 }}>%</span>
+            <span style={{ "--i": 4 }}> </span>
+            <span style={{ "--i": 5 }}>o</span>
+            <span style={{ "--i": 6 }}>f</span>
+            <span style={{ "--i": 7 }}>f</span>
+            <span style={{ "--i": 8 }}> </span>
           </div>
         </div>
       </div>
