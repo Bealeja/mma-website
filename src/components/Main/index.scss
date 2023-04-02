@@ -15,4 +15,32 @@
   background-color: red;
   text-align: center;
   margin: 1rem;
+  position: relative;
+}
+
+.banner h2 {
+  font-family: "Playfair Display", serif;
+}
+
+.waviy {
+  position: relative;
+}
+.banner span {
+  font-family: "Playfair Display", serif;
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: #fff;
+}
+
+.banner:hover span {
+  animation: flip 2s infinite;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
 }
