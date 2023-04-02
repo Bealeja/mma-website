@@ -44,10 +44,10 @@ export default function Navbar() {
               <a className="navbar-item tac">Join Us!</a>
             </div>
             <div className="navbar-end">
-              <a className="button">Login</a>
-              <a className="button" onClick={handleClick}>
+              <button className="button">Login</button>
+              <button className="button" onClick={handleClick}>
                 Sign Up
-              </a>
+              </button>
             </div>
           </div>
         </div>

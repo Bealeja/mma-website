@@ -1,3 +1,22 @@
+.formbutton {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.formheading {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.formheading img {
+  margin: 30px 10px 0px 0px;
+}
+
+.formheading img:hover {
+  animation: 0.5s jumping-icon linear infinite;
+}
+
 .popup {
   z-index: 2;
   position: absolute;
@@ -16,6 +35,14 @@
   padding: 10px 70px 40px 70px;
   border-radius: 10px;
   border: black solid 5px;
+  animation: 1s fade-up ease-out;
+  font-family: "Playfair Display", serif;
+}
+
+.popup-inner h2 {
+  text-align: center;
+  font-size: 30pt;
+  color: black;
 }
 
 input[type="text"],
@@ -42,4 +69,34 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background-color: darkred;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes jumping-icon {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }

@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.scss";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
-import About from "./components/Main/About";
+import About from "./components/About";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
 import Ads from "./components/Ads";
@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Main />
+      <About />
       <Social />
       <Ads />
       <Footer />

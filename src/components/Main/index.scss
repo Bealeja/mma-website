@@ -16,25 +16,25 @@
   text-align: center;
   margin: 1rem;
   position: relative;
+  padding: 10px;
+  z-index: -1;
 }
 
 .banner h2 {
   font-family: "Playfair Display", serif;
+  font-weight: bold;
 }
 
-.waviy {
-  position: relative;
-}
 .banner span {
   font-family: "Playfair Display", serif;
   position: relative;
   display: inline-block;
-  font-size: 40px;
-  color: #fff;
+  font-size: 30px;
+  color: black;
 }
 
 .banner:hover span {
-  animation: flip 2s infinite;
+  animation: flip 3s infinite;
   animation-delay: calc(0.2s * var(--i));
 }
 

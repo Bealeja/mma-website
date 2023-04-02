@@ -1,4 +1,5 @@
 import React from "react";
+import { Route } from "react-router-dom";
 import "./index.scss";
 
 export default function About() {
@@ -7,8 +8,8 @@ export default function About() {
       {/* <!-- About Us --> */}
       <div className="section is-black">
         <div className="box">
-          <h1 className="blackbackground">About Us</h1>
           <div>
+            <h1 className="blackbackground">About Us</h1>
             <p>
               The BJJ club's commitment to supporting local tournaments is a
               cornerstone of its community involvement. By participating in and
@@ -60,8 +61,8 @@ export default function About() {
         </div>
         <div className="box">
           <iframe
-            width="700"
-            height="800"
+            width="70%"
+            height="100%"
             src="https://www.youtube.com/embed/57q_S_Y7JgA?controls=0?autoplay=1"
             frameBorder="0"
           ></iframe>

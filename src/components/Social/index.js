@@ -9,6 +9,7 @@ import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
 import ImageSlider from "../Ads";
+import view from "../../assets/people.png";
 
 export default function Social() {
   const [counterOn, setCounterOn] = useState(false);
@@ -19,15 +20,16 @@ export default function Social() {
       onExit={() => setCounterOn(true)}
     >
       <div className="social">
-        <h2>Exposure</h2>
+        <h1>Exposure</h1>
         <div class="section-social">
           <div class="statistic">
             <h2>
               Facebook <img src={Facebook} height="20" />
             </h2>
             <h3>
+              <img src={view} className="followers" height="20" />
               {counterOn && (
-                <CountUp start={0} end={252019} duration={5} delay={0} />
+                <CountUp start={0} end={256809} duration={5} delay={0} />
               )}
             </h3>
           </div>
@@ -36,8 +38,9 @@ export default function Social() {
               Instagram <img src={Instagram} height="20" />
             </h2>
             <h3>
+              <img src={view} className="followers" height="20" />
               {counterOn && (
-                <CountUp start={0} end={252019} duration={5} delay={0} />
+                <CountUp start={0} end={1802006} duration={5} delay={0} />
               )}
             </h3>
           </div>
@@ -46,8 +49,9 @@ export default function Social() {
               Snapchat <img src={Snapchat} height="20" />
             </h2>
             <h3>
+              <img src={view} className="followers" height="20" />
               {counterOn && (
-                <CountUp start={0} end={252019} duration={5} delay={0} />
+                <CountUp start={0} end={123001} duration={5} delay={0} />
               )}
             </h3>
           </div>
@@ -56,8 +60,9 @@ export default function Social() {
               Tiktok <img src={Tiktok} height="20" />
             </h2>
             <h3>
+              <img src={view} className="followers" height="20" />
               {counterOn && (
-                <CountUp start={0} end={252019} duration={5} delay={0} />
+                <CountUp start={0} end={800123} duration={5} delay={0} />
               )}
             </h3>
           </div>

@@ -15,29 +15,20 @@ export default class Ads extends Component {
       speed: 500,
       slidesToShow: 2,
       slidesToScroll: 1,
+      centerMode: true,
     };
 
     return (
-      <Slider {...settings}>
-        <div>
-          <img src={Ad1} />
-        </div>
-        <div>
-          <img src={Ad1} />
-        </div>
-        <div>
-          <img src={Ad1} />
-        </div>
-        <div>
-          <img src={Ad1} />
-        </div>
-        <div>
-          <img src={Ad1} />
-        </div>
-        <div>
-          <img src={Ad1} />
-        </div>
-      </Slider>
+      <div className="slider">
+        <Slider {...settings}>
+          <div>
+            <img className="sliderImage" src={Ad1} />
+          </div>
+          <div>
+            <img className="sliderImage" src={Ad2} />
+          </div>
+        </Slider>
+      </div>
     );
   }
 }

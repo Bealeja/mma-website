@@ -1,5 +1,4 @@
 import React from "react";
-import About from "./About";
 import "./index.scss";
 import Hero from "../../assets/Takedown_Titans_Cropped_1.png";
 import Fight1 from "../../assets/ufc_fight_1.png";
@@ -25,15 +24,41 @@ export default function Main() {
             <span style={{ "--i": 1 }}>2</span>
             <span style={{ "--i": 2 }}>5</span>
             <span style={{ "--i": 3 }}>%</span>
-            <span style={{ "--i": 4 }}> </span>
+            <span style={{ "--i": 4 }}>&nbsp;</span>
             <span style={{ "--i": 5 }}>o</span>
             <span style={{ "--i": 6 }}>f</span>
             <span style={{ "--i": 7 }}>f</span>
-            <span style={{ "--i": 8 }}> </span>
+            <span style={{ "--i": 8 }}>&nbsp;</span>
+            <span style={{ "--i": 9 }}>x</span>
+            <span style={{ "--i": 10 }}>m</span>
+            <span style={{ "--i": 11 }}>a</span>
+            <span style={{ "--i": 12 }}>r</span>
+            <span style={{ "--i": 13 }}>t</span>
+            <span style={{ "--i": 14 }}>i</span>
+            <span style={{ "--i": 15 }}>a</span>
+            <span style={{ "--i": 16 }}>l</span>
+            <span style={{ "--i": 17 }}>&nbsp;</span>
+            <span style={{ "--i": 18 }}>u</span>
+            <span style={{ "--i": 19 }}>s</span>
+            <span style={{ "--i": 20 }}>e</span>
+            <span style={{ "--i": 21 }}>&nbsp;</span>
+            <span style={{ "--i": 22 }}>c</span>
+            <span style={{ "--i": 23 }}>o</span>
+            <span style={{ "--i": 24 }}>d</span>
+            <span style={{ "--i": 25 }}>e</span>
+            <span style={{ "--i": 26 }}>:</span>
+            <span style={{ "--i": 27 }}>&nbsp;</span>
+            <span style={{ "--i": 28 }}>T</span>
+            <span style={{ "--i": 28 }}>a</span>
+            <span style={{ "--i": 28 }}>k</span>
+            <span style={{ "--i": 28 }}>e</span>
+            <span style={{ "--i": 28 }}>d</span>
+            <span style={{ "--i": 28 }}>o</span>
+            <span style={{ "--i": 28 }}>w</span>
+            <span style={{ "--i": 28 }}>n</span>
           </div>
         </div>
       </div>
-      <About />
     </div>
   );
 }

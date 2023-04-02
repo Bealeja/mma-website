@@ -10,6 +10,7 @@
   font-size: 16px;
   border-radius: 10px;
   font-family: "Playfair Display", serif;
+  cursor: pointer;
 }
 
 .container {
@@ -79,14 +80,14 @@ a:visited {
 a:hover {
   text-decoration: none;
   color: red;
-  animation: 1s anim-lineUp infinite;
+  animation: 1s bump infinite;
 }
 
 a:active {
   text-decoration: none;
 }
 
-@keyframes anim-lineUp {
+@keyframes bump {
   0% {
     opacity: 1;
     transform: translateY(0%);
