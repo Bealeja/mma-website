@@ -1,10 +1,10 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { Route } from "react-router-dom";
 import "./index.scss";
 
-export default function About() {
+function About(props, ref) {
   return (
-    <div className="about">
+    <div ref={ref} className="about">
       {/* <!-- About Us --> */}
       <div className="section is-black">
         <div className="box">
@@ -72,3 +72,5 @@ export default function About() {
     </div>
   );
 }
+
+export default forwardRef(About);

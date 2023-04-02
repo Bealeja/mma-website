@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useRef } from "react";
 import Logo from "../../assets/Logo.png";
 import "./index.scss";
 import Signup from "../Signup";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ Aboutus, Main }) {
+  //Scroll Trigger
+  const AboutUsScroll = () => {
+    Aboutus();
+  };
+
+  const MainScroll = () => {
+    Main();
+  };
+
+  //Form Trigger
   const [showForm, setShowForm] = useState(false);
 
   const handleClick = () => {
@@ -28,11 +38,15 @@ export default function Navbar() {
             </a>
             {/* <!--Nav Links--> */}
             <div className="navbar-start">
-              <a className="navbar-item" href="#home">
+              <a onClick={MainScroll} className="navbar-item" href="#home">
                 {" "}
                 Home{" "}
               </a>
-              <a className="navbar-item" href="#aboutus">
+              <a
+                onClick={AboutUsScroll}
+                className="navbar-item"
+                href="#aboutus"
+              >
                 {" "}
                 About Us{" "}
               </a>

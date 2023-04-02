@@ -21,8 +21,8 @@ export default function Social() {
     >
       <div className="social">
         <h1>Exposure</h1>
-        <div class="section-social">
-          <div class="statistic">
+        <div className="section-social">
+          <div className="statistic">
             <h2>
               Facebook <img src={Facebook} height="20" />
             </h2>
@@ -33,7 +33,7 @@ export default function Social() {
               )}
             </h3>
           </div>
-          <div class="statistic">
+          <div className="statistic">
             <h2>
               Instagram <img src={Instagram} height="20" />
             </h2>
@@ -44,7 +44,7 @@ export default function Social() {
               )}
             </h3>
           </div>
-          <div class="statistic">
+          <div className="statistic">
             <h2>
               Snapchat <img src={Snapchat} height="20" />
             </h2>
@@ -55,7 +55,7 @@ export default function Social() {
               )}
             </h3>
           </div>
-          <div class="statistic">
+          <div className="statistic">
             <h2>
               Tiktok <img src={Tiktok} height="20" />
             </h2>

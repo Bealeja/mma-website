@@ -1,13 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./index.scss";
 import Hero from "../../assets/Takedown_Titans_Cropped_1.png";
 import Fight1 from "../../assets/ufc_fight_1.png";
 import Fight2 from "../../assets/ufc_fight_2.png";
 import Fight3 from "../../assets/ufc_fight_3.png";
 
-export default function Main() {
+function Main(props, ref) {
   return (
-    <div className="main">
+    <div ref={ref} className="main">
       <div className="landingpage">
         <div>
           <img src={Hero} width="100%" />
@@ -62,3 +62,5 @@ export default function Main() {
     </div>
   );
 }
+
+export default forwardRef(Main);
