@@ -8,12 +8,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./index.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import Slider from "../Slider";
+
+import image1 from "../../assets/ufc_fight_1.png";
+import image2 from "../../assets/ufc_fight_2.png";
+import image3 from "../../assets/ufc_fight_3.png";
 
 export default function Footer() {
+  const images = [image1, image2, image3];
+
   return (
     <footer
       style={{ backgroundColor: "black", color: "white", padding: "20px" }}
     >
+      <Slider images={images} />
       <div className="container">
         <div className="social-icons">
           <a href="#">

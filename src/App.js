@@ -16,24 +16,27 @@ const AboutWithRef = forwardRef((props, ref) => <About {...props} ref={ref} />);
 const MainWithRef = forwardRef((props, ref) => <Main {...props} ref={ref} />);
 
 function App() {
-  const childRef = useRef(null);
+  const AboutRef = useRef(null);
   const MainRef = useRef(null);
+  const SocialRef = useRef(null);
 
-  const Main = () => {
+  const MainSearch = () => {
     MainRef.current?.scrollIntoView();
   };
-
-  const Aboutus = () => {
-    childRef.current?.scrollIntoView();
+  const AboutSearch = () => {
+    AboutRef.current?.scrollIntoView();
+  };
+  const SocialSearch = () => {
+    SocialRef.current?.scrollIntoView();
   };
 
   return (
     <Router>
       <div className="App">
-        <Navbar Aboutus={Aboutus} Main={Main} />
+        <Navbar Aboutus={AboutSearch} Main={MainSearch} Social={SocialSearch} />
         <MainWithRef ref={MainRef} />
-        <AboutWithRef ref={childRef} />
-        <Social />
+        <AboutWithRef ref={AboutRef} />
+        <Social ref={SocialRef} />
         <Ads />
         <Footer />
       </div>

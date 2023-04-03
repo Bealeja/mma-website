@@ -1,0 +1,108 @@
+.formbutton {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.formheading {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.formheading img {
+  margin: 30px 10px 0px 0px;
+}
+
+.formheading img:hover {
+  animation: 0.5s jumping-icon linear infinite;
+}
+
+.popup {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.popup-inner {
+  display: block;
+  margin: 10%;
+  width: 50%;
+  opacity: 1;
+  background: red;
+  justify-content: center;
+  padding: 10px 70px 40px 70px;
+  border-radius: 10px;
+  border: black solid 5px;
+  animation: 1s fade-up ease-out;
+  font-family: "Playfair Display", serif;
+}
+
+.popup-inner h2 {
+  text-align: center;
+  font-size: 30pt;
+  color: black;
+}
+
+.popup-inner h3 {
+  text-align: center;
+  font-size: 20pt;
+  color: black;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: black solid 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: darkred;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes jumping-icon {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

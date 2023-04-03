@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import "./index.scss";
 import Ads from "../Ads";
 import Facebook from "../../assets/Facebook-logo.png";
@@ -11,7 +11,7 @@ import { useState } from "react";
 import ImageSlider from "../Ads";
 import view from "../../assets/people.png";
 
-export default function Social() {
+function Social(props, ref) {
   const [counterOn, setCounterOn] = useState(false);
 
   return (
@@ -19,7 +19,7 @@ export default function Social() {
       onEnter={() => setCounterOn(true)}
       onExit={() => setCounterOn(true)}
     >
-      <div className="social">
+      <div ref={ref} className="social">
         <h1>Exposure</h1>
         <div className="section-social">
           <div className="statistic">
@@ -71,3 +71,5 @@ export default function Social() {
     </ScrollTrigger>
   );
 }
+
+export default forwardRef(Social);
