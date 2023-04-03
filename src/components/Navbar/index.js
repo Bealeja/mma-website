@@ -25,6 +25,7 @@ export default function Navbar({ Aboutus, Main, Social }) {
 
   const handleShowLoginForm = () => {
     setShowLoginForm(true);
+    setShowSignupForm(false);
   };
 
   const handleCloseLoginForm = () => {
@@ -33,6 +34,7 @@ export default function Navbar({ Aboutus, Main, Social }) {
 
   const handleShowSignupForm = () => {
     setShowSignupForm(true);
+    setShowLoginForm(false);
   };
 
   const handleCloseSignupForm = () => {

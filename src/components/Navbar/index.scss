@@ -13,6 +13,14 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: darkred;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
 .container {
   flex-grow: 1;
   margin: 0 auto;
