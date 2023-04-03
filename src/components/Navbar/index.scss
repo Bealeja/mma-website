@@ -70,21 +70,23 @@
   user-select: none;
 }
 
-a:link {
+.navbar-item:link {
   text-decoration: none;
+  color: white;
 }
 
-a:visited {
+.navbar-item:visited {
   text-decoration: none;
+  color: white;
 }
 
-a:hover {
+.navbar-item:hover {
   text-decoration: none;
   color: red;
   animation: 1s bump infinite;
 }
 
-a:active {
+.navbar-item:active {
   text-decoration: none;
 }
 

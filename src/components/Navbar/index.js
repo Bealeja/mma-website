@@ -74,7 +74,6 @@ export default function Navbar({ Aboutus, Main, Social }) {
                 Marketing{" "}
               </a>
               <a className="navbar-item tac"> T&C </a>
-              <a className="navbar-item tac">Join Us!</a>
             </div>
             <div className="navbar-end">
               <button className="button" onClick={handleShowLoginForm}>
