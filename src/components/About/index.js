@@ -1,10 +1,9 @@
 import React, { forwardRef } from "react";
-import { Route } from "react-router-dom";
 import "./index.scss";
 
 function About(props, ref) {
   return (
-    <div ref={ref} className="about">
+    <div ref={ref} className="about" data-testid="about">
       {/* <!-- About Us --> */}
       <div className="section is-black">
         <div className="box">
@@ -61,12 +60,12 @@ function About(props, ref) {
         </div>
         <div className="box">
           <iframe
+            title="BJJ Club Video"
             width="70%"
             height="100%"
             src="https://www.youtube.com/embed/57q_S_Y7JgA?controls=0?autoplay=1"
             frameBorder="0"
           ></iframe>
-          {/* <!-- <img src="./assets/Bjj_cropped.png" class="aboutusmedia" /> --> */}
         </div>
       </div>
     </div>
