@@ -20,7 +20,7 @@ function Main(props, ref) {
         </div>
         {/* <!--Advertising Banner--> */}
         <div className="section">
-          <div className="banner">
+          <div ref={Aboutref} className="banner">
             <span style={{ "--i": 1 }}>2</span>
             <span style={{ "--i": 2 }}>5</span>
             <span style={{ "--i": 3 }}>%</span>
