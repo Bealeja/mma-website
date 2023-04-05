@@ -1,5 +1,6 @@
 {
   "name": "mma-website",
+  "homepage": "https://Bealeja.gitHub.io/github-pages-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -15,6 +16,7 @@
     "cheerio": "^1.0.0-rc.12",
     "enzyme": "^3.11.0",
     "express": "^4.18.2",
+    "gh-pages": "^5.0.0",
     "loaders.css": "^0.1.2",
     "node-image-downloader": "^1.0.7",
     "nodemon": "^2.0.22",
@@ -34,6 +36,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

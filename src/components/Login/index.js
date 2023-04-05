@@ -49,7 +49,7 @@ export default function Login({ onClose }) {
     <div className="popup">
       <div className="popup-inner">
         <span className="formheading">
-          <img src={Logo} width="50" height="50" />
+          <img arlt="logo" src={Logo} width="50" height="50" />
           <h2>Good To See You Back!</h2>
         </span>
         <h3>Enter Your Login Details</h3>
