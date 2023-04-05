@@ -65,6 +65,7 @@ function About(props, ref) {
             height="100%"
             src="https://www.youtube.com/embed/57q_S_Y7JgA?controls=0?autoplay=1"
             frameBorder="0"
+            atl="video"
           ></iframe>
         </div>
       </div>

@@ -22,10 +22,15 @@ function Social(props, ref) {
         <div className="section-social">
           <div className="statistic">
             <h2>
-              Facebook <img src={Facebook} height="20" />
+              Facebook <img alt="facebook" src={Facebook} height="20" />
             </h2>
             <h3>
-              <img src={view} className="followers" height="20" />
+              <img
+                alt="followers"
+                src={view}
+                className="followers"
+                height="20"
+              />
               {counterOn && (
                 <CountUp start={0} end={256809} duration={5} delay={0} />
               )}
@@ -33,10 +38,15 @@ function Social(props, ref) {
           </div>
           <div className="statistic">
             <h2>
-              Instagram <img src={Instagram} height="20" />
+              Instagram <img alt="Instagram" src={Instagram} height="20" />
             </h2>
             <h3>
-              <img src={view} className="followers" height="20" />
+              <img
+                alt="followers"
+                src={view}
+                className="followers"
+                height="20"
+              />
               {counterOn && (
                 <CountUp start={0} end={1802006} duration={5} delay={0} />
               )}
@@ -44,10 +54,15 @@ function Social(props, ref) {
           </div>
           <div className="statistic">
             <h2>
-              Snapchat <img src={Snapchat} height="20" />
+              Snapchat <img alt="Snapchat" src={Snapchat} height="20" />
             </h2>
             <h3>
-              <img src={view} className="followers" height="20" />
+              <img
+                alt="followers"
+                src={view}
+                className="followers"
+                height="20"
+              />
               {counterOn && (
                 <CountUp start={0} end={123001} duration={5} delay={0} />
               )}
@@ -55,10 +70,15 @@ function Social(props, ref) {
           </div>
           <div className="statistic">
             <h2 id="tiktok">
-              Tiktok <img src={Tiktok} height="20" />
+              Tiktok <img alt="Tiktok" src={Tiktok} height="20" />
             </h2>
             <h3>
-              <img src={view} className="followers" height="20" />
+              <img
+                alt="followers"
+                src={view}
+                className="followers"
+                height="20"
+              />
               {counterOn && (
                 <CountUp start={0} end={800123} duration={5} delay={0} />
               )}

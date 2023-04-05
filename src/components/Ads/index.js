@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import fightnight1 from "../../assets/ufc_fn_16-4.png";
@@ -49,15 +48,15 @@ export default class Ads extends Component {
         <div className="slider">
           <div className="section">
             <a href={fightnightLink1} className="medialink">
-              <img className="mediaimage" src={fightnight1} />
+              <img alt="fightnight1" className="mediaimage" src={fightnight1} />
             </a>
 
             <a href={fightnightLink2} className="medialink">
-              <img className="mediaimage" src={fightnight2} />
+              <img alt="fightnight2" className="mediaimage" src={fightnight2} />
             </a>
 
             <a href={fightnightLink3} className="medialink">
-              <img className="mediaimage" src={fightnight3} />
+              <img alt="fightnight3" className="mediaimage" src={fightnight3} />
             </a>
           </div>
         </div>

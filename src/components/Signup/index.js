@@ -62,7 +62,7 @@ export default function SignUpForm({ onClose }) {
     <div className="popup">
       <div className="popup-inner">
         <span className="formheading">
-          <img src={Logo} width="50" height="50" />
+          <img alt="logo" src={Logo} width="50" height="50" />
           <h2>Join The Family!</h2>
         </span>
         <form onSubmit={handleSubmit}>

@@ -51,7 +51,7 @@ export default function Navbar({ Aboutus, Main, Social }) {
           <div className="navbar-brand">
             {/* <!--Logo--> */}
             <a className="navbar-item">
-              <img src={Logo} width="50" height="50" />
+              <img alt="logo" src={Logo} width="50" height="50" />
             </a>
             {/* <!--Nav Links--> */}
             <div className="navbar-start">
@@ -75,7 +75,6 @@ export default function Navbar({ Aboutus, Main, Social }) {
                 {" "}
                 Marketing{" "}
               </a>
-              <a className="navbar-item tac"> T&C </a>
             </div>
             <div className="navbar-end">
               <button className="button" onClick={handleShowLoginForm}>

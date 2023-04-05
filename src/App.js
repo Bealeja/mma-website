@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import Ads from "./components/Ads";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import { forwardRef, useRef } from "react";
 
 library.add(fab);
