@@ -1,6 +1,5 @@
 import React, { forwardRef } from "react";
 import "./index.scss";
-import Ads from "../Ads";
 import Facebook from "../../assets/Facebook-logo.png";
 import Instagram from "../../assets/instagram.png";
 import Snapchat from "../../assets/snapchat.png";
@@ -8,7 +7,6 @@ import Tiktok from "../../assets/tiktok.png";
 import CountUp from "react-countup";
 import ScrollTrigger from "react-scroll-trigger";
 import { useState } from "react";
-import ImageSlider from "../Ads";
 import view from "../../assets/people.png";
 
 function Social(props, ref) {
@@ -56,7 +54,7 @@ function Social(props, ref) {
             </h3>
           </div>
           <div className="statistic">
-            <h2>
+            <h2 id="tiktok">
               Tiktok <img src={Tiktok} height="20" />
             </h2>
             <h3>

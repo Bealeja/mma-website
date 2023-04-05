@@ -8,7 +8,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import "./index.scss";
 import "@fortawesome/fontawesome-svg-core/styles.css";
-import Slider from "../Slider";
 
 export default function Footer() {
   return (

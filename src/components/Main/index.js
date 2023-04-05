@@ -23,14 +23,14 @@ function Main(props, ref) {
     <div ref={ref} className="main">
       <div className="landingpage">
         {/* <!--Hero Image--> */}
-        <img src={Hero} width="100%" />
+        <img alt="hero-image" src={Hero} width="100%" />
 
         {/* <!-- Local Fights (images)--> */}
         <div className="section-main">
           {/* Use map method to dynamically render fight images and links */}
           {fights.map((fight, index) => (
             <a href={fight.link} className="medialink" key={index}>
-              <img className="mediaimage" src={fight.src} />
+              <img alt="fight" className="mediaimage" src={fight.src} />
             </a>
           ))}
         </div>
@@ -38,7 +38,7 @@ function Main(props, ref) {
         {/* <!--Advertising Banner--> */}
         <div className="section">
           <div className="banner">
-            <a href={xmartialLink}>
+            <a href={xmartialLink} alt="25%offxmartialusecode:Takedown">
               {[
                 { value: "2", i: 1 },
                 { value: "5", i: 2 },

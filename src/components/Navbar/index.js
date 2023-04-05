@@ -1,7 +1,7 @@
 import React from "react";
 import Logo from "../../assets/Logo.png";
 import "./index.scss";
-import Signup from "../Signup";
+import SignUp from "../Signup";
 import { useState } from "react";
 import Login from "../Login";
 
@@ -43,7 +43,7 @@ export default function Navbar({ Aboutus, Main, Social }) {
 
   return (
     <div className="navbar">
-      {showSignupForm && <Signup onClose={handleCloseSignupForm} />}
+      {showSignupForm && <SignUp onClose={handleCloseSignupForm} />}
       {showLoginForm && <Login onClose={handleCloseLoginForm} />}
       {/* <!--NAV BAR--> */}
       <div className="container">
