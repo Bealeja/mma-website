@@ -2,7 +2,7 @@
   "name": "mma-website",
   "homepage": "https://Bealeja.gitHub.io/github-pages-app/",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
